@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="panel-body">
-                    <p>{{ viewPost(announcements | head) }}</p>
+                    <p>{{ viewPost(announcements | head, page, request) }}</p>
                     <hr>
                     <a href="{{ announcementsUrl }}">{{ i18n('resources.FenixEduLearningResources', 'label.announcements.all') }}</a>
                 </div>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="panel-body">
-                    <p>{{ viewPost(events | head) }}</p>
+                    <p>{{ viewPost(events | head, page, request) }}</p>
                     <hr>
                     <a href="{{ eventsUrl }}">{{ i18n('resources.FenixEduLearningResources', 'label.announcements.all') }}</a>
                 </div>
